@@ -142,24 +142,34 @@
                     x-transition:leave-end="opacity-0 translate-y-2 scale-95"
                     class="absolute right-0 mt-2 w-44 bg-white rounded shadow-lg py-2 z-50" style="display: none;">
 
-                    <!-- EN -->
                     @if ($locale !== 'en')
                         <a href="{{ route('lang.switch', 'en') }}"
-                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent">
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent text-[#000]">
                             <img src="{{ asset('assets/images/icons/usa-flag.png') }}" class="w-5 h-5 rounded-full">
                             <span>
-                                {{ $locale === 'kh' ? 'ភាសាអង់គ្លេស' : 'English' }}
+                                {{ $locale === 'km' ? 'ភាសាអង់គ្លេស' : ($locale === 'ch' ? '英语' : 'English') }}
                             </span>
                         </a>
                     @endif
 
                     <!-- KM -->
-                    @if ($locale !== 'kh')
-                        <a href="{{ route('lang.switch', 'kh') }}"
-                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent">
+                    @if ($locale !== 'km')
+                        <a href="{{ route('lang.switch', 'km') }}"
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent text-[#000]">
                             <img src="{{ asset('assets/images/icons/kh-flag.png') }}" class="w-5 h-5 rounded-full">
                             <span>
-                                {{ $locale === 'en' ? 'Khmer' : 'ភាសាខ្មែរ' }}
+                                {{ $locale === 'en' ? 'Khmer' : ($locale === 'ch' ? '高棉语' : 'ភាសាខ្មែរ') }}
+                            </span>
+                        </a>
+                    @endif
+
+                    <!-- CN -->
+                    @if ($locale !== 'ch')
+                        <a href="{{ route('lang.switch', 'ch') }}"
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent text-[#000]">
+                            <img src="{{ asset('assets/images/icons/ch-flag.png') }}" class="w-5 h-5 rounded-full">
+                            <span>
+                                {{ $locale === 'en' ? 'Chinese' : ($locale === 'km' ? 'ចិន' : '中文') }}
                             </span>
                         </a>
                     @endif
@@ -168,8 +178,7 @@
         </div>
 
         <div class="lg:hidden flex items-center">
-            <button @click="open = true"
-                class="flex items-center p-2 rounded-md bg-gray-200 hover:bg-gray-300">
+            <button @click="open = true" class="flex items-center p-2 rounded-md bg-gray-200 hover:bg-gray-300">
                 <!-- Hamburger Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -214,24 +223,34 @@
                     x-transition:leave-end="opacity-0 translate-y-2 scale-95"
                     class="absolute right-0 mt-2 w-44 bg-white rounded shadow-lg py-2 z-50" style="display: none;">
 
-                    <!-- EN -->
                     @if ($locale !== 'en')
                         <a href="{{ route('lang.switch', 'en') }}"
-                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent">
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white">
                             <img src="{{ asset('assets/images/icons/usa-flag.png') }}" class="w-5 h-5 rounded-full">
                             <span>
-                                {{ $locale === 'kh' ? 'ភាសាអង់គ្លេស' : 'English' }}
+                                {{ $locale === 'km' ? 'ភាសាអង់គ្លេស' : ($locale === 'cn' ? '英语' : 'English') }}
                             </span>
                         </a>
                     @endif
 
                     <!-- KM -->
-                    @if ($locale !== 'kh')
-                        <a href="{{ route('lang.switch', 'kh') }}"
-                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent">
+                    @if ($locale !== 'km')
+                        <a href="{{ route('lang.switch', 'km') }}"
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white">
                             <img src="{{ asset('assets/images/icons/kh-flag.png') }}" class="w-5 h-5 rounded-full">
                             <span>
-                                {{ $locale === 'en' ? 'Khmer' : 'ភាសាខ្មែរ' }}
+                                {{ $locale === 'en' ? 'Khmer' : ($locale === 'cn' ? '高棉语' : 'ភាសាខ្មែរ') }}
+                            </span>
+                        </a>
+                    @endif
+
+                    <!-- CN -->
+                    @if ($locale !== 'ch')
+                        <a href="{{ route('lang.switch', 'ch') }}"
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white">
+                            <img src="{{ asset('assets/images/icons/ch-flag.png') }}" class="w-5 h-5 rounded-full">
+                            <span>
+                                {{ $locale === 'en' ? 'Chinese' : ($locale === 'km' ? 'ចិន' : '中文') }}
                             </span>
                         </a>
                     @endif
