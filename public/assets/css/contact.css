@@ -1,0 +1,280 @@
+.contact-bg{
+width: 100%;
+height: 175vh;
+position: relative;
+}
+
+.contact-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0%
+}
+
+.form-contact{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0%;
+ z-index: 1;
+}
+
+.wrapper-contact{
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.wrapper-contact p{
+  text-align: center;
+  color:#059848;
+  font-size: 30px;
+}
+
+.wrapper-contact h1{
+  font-size: 70px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1025px) {
+
+.wrapper-contact{
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+  .wrapper-contact h1{
+  font-size: 60px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+}
+
+@media screen and (max-width: 769px) {
+
+.wrapper-contact{
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+  .wrapper-contact h1{
+  font-size: 50px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+}
+
+@media screen and (max-width: 426px) {
+
+.wrapper-contact{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+  .wrapper-contact h1{
+  font-size: 40px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+}
+
+
+.wrapper-contact .input-field input{
+  width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+}
+
+.wrapper-contact .input-field select{
+  width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+}
+
+
+.input-field{
+    width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.wrapper-contact .input-field input::placeholder{
+  font-size: 16px !important;
+  color: #394552 !important;
+}
+
+.wrapper-contact .input-field input:focus{
+  border: 1px solid #059848 !important;
+}
+
+.wrapper-contact .input-field textarea{
+  width: 100%;
+  max-height: auto;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+}
+
+.wrapper-contact .input-field textarea::placeholder{
+  color: #394552;
+}
+
+.wrapper-contact .input-field textarea:focus{
+  border: 1px solid #059848 !important;
+}
+
+.confirm-policy{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.confirm-policy input[type="checkbox"]{
+  width: 27px;
+  height: 27px;
+  border-radius: 100px;
+  background-color: #059848;
+  border: none;
+}
+
+.confirm-policy input[type="checkbox"]:focus,
+.confirm-policy input[type="checkbox"]:active
+{
+  box-shadow: none;
+ background-color: #059848;
+}
+
+.confrim-policy-text{
+  width: 25rem;
+}
+
+.confirm-policy p{
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.btn-Submit{
+  position: relative;
+  width: 396.97px;
+  height: 80.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  font-size: 35px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .wrapper-contact{
+  margin-top: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.btn-Submit{
+  width: 356.97px;
+  height: 75.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: 0rem;
+}
+
+.confirm-policy p{
+  font-size: 14px;
+  color: #059848;
+}
+}
+
+@media screen and (max-width: 426px) {
+  .btn-Submit{
+  width: 286.97px;
+  height: 68.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: -0.3rem;
+  font-size: 25px;
+}
+}
+
+
+
+
