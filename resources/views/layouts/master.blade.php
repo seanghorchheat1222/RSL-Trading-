@@ -114,7 +114,7 @@
     @endphp
     @include('components.header')
 
-    <div class="relative w-full h-full">
+    <div class="relative w-full h-full p-0">
         @include('components.navbar')
 
         @yield('content')
