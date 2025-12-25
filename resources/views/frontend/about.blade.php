@@ -28,8 +28,8 @@
       <div class="first-card-background">
         <img src="{{ asset('assets/images/bg-1.png') }}">
       </div>
-            <div class="first-card-sub-title">
-          <p>Founded in 2015, RSL Trading is a Cambodian leader in agricultural exports, dedicated to connecting local farmers with global markets. Our goal is to bring the finest “Made in Cambodia” products—such as rice, coffee, corn, cashew nuts, mangoes, and cassava—to buyers worldwide while supporting farmers with better opportunities and incomes.</p>
+            <div class="first-card-sub-title container">
+          <p style="text-align: left;">Founded in 2015, RSL Trading is a Cambodian leader in agricultural exports, dedicated to connecting local farmers with global markets. Our goal is to bring the finest “Made in Cambodia” products—such as rice, coffee, corn, cashew nuts, mangoes, and cassava—to buyers worldwide while supporting farmers with better opportunities and incomes.</p>
         </div>
       <div class="main-card-product">
       <div class="container">
@@ -156,6 +156,19 @@
 </section>
 
 <section>
+  <div class="second-banner">
+    <img class="second-banner-img" src="{{ asset('assets/images/about-us-second-image.png') }}">
+    <div class="second-banner-context container">
+     <img class="direct-profile" src="{{ asset('assets/images/profile-card-1.png') }}">
+     <h5>Message from Board of Director</h5>
+     <div class="p-bg">
+<p>At the heart of our mission is a commitment to global well-being. By providing premium, high-quality products, we aim to enhance longevity and health for people everywhere. We are dedicated to serving and supporting our global community indefinitely, ensuring a thriving future for all humanity.</p>
+     </div>
+    </div>
+  </div> 
+</section>
+
+<section>
   <div class="meet-our-team-card">
   <div class="container">
     <h1>Meet Our Team</h1>
@@ -210,6 +223,10 @@
         </div>
 
          <div class="credentail-img">
+          <img src="{{ asset('assets/images/credentail-2.png') }}">
+        </div>
+
+           <div class="credentail-img">
           <img src="{{ asset('assets/images/credentail-2.png') }}">
         </div>
     </div>

@@ -76,12 +76,9 @@
         <div class="we-start">
             <img class="we-start-bg" src="{{ asset('assets/images/bg-2.png') }}">
             <div class="we-start-context">
-                <div class="context-one">
+                <div style="margin-top: -7rem" class="context-one">
                     <h5>Why We Started</h5>
                     <p>“We help local farmers by creating global opportunities for Cambodian agricultural products.”</p>
-                </div>
-                <div class="context-two">
-                    <h5>Our Main Commodities</h5>
                 </div>
             </div>
 

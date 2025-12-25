@@ -97,7 +97,7 @@
                     x-transition:leave="transition ease-in duration-150"
                     x-transition:leave-start="opacity-100 translate-y-0 scale-100"
                     x-transition:leave-end="opacity-0 translate-y-2 scale-95"
-                    class="absolute right-0 mt-2 w-44 bg-white rounded shadow-lg py-2 z-50" style="display: none;">
+                    class="absolute right-0 mt-2 w-44 bg-white rounded shadow-lg py-2 z-50" style="display: none;>
 
                     @if ($locale !== 'en')
                         <a href="{{ route('lang.switch', 'en') }}"
@@ -216,7 +216,7 @@
 
         </div>
 
-        <div x-show="open" x-cloak x-transition:enter="transform transition ease-out duration-300"
+        <div style="position: relative;" x-show="open" x-cloak x-transition:enter="transform transition ease-out duration-300"
             x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0"
             x-transition:leave="transform transition ease-in duration-200" x-transition:leave-start="translate-x-0"
             x-transition:leave-end="translate-x-full"
