@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="{{ asset('assets/css/events.css') }}">
 @endsection
 
-@section('content') 
+@section('content')
 
 <section>
 <div class="main-banner">
@@ -45,9 +45,9 @@ Founded in 2015, RSL Trading is a Cambodian leader in agricultural exports, dedi
 
 
                 <div class="event-card-wrapper">
-      
+
               <div class="event-content">
-                <h5>Headline Title</h5>
+                <h5>Headline Title1</h5>
                 <p>
 Founded in 2015, RSL Trading is a Cambodian leader in agricultural exports, dedicated to connecting local farmers with global markets. Our goal is to bring the finest “Made in Cambodia” products—such as rice, coffee, corn, cashew nuts, mangoes, and cassava—to buyers worldwide while supporting farmers with better opportunities and incomes.</p>
           </div>
@@ -72,7 +72,7 @@ Founded in 2015, RSL Trading is a Cambodian leader in agricultural exports, dedi
 
 
               <div class="event-card-wrapper">
-      
+
               <div class="event-content">
                 <h5>Headline Title</h5>
                 <p>
@@ -108,10 +108,10 @@ Founded in 2015, RSL Trading is a Cambodian leader in agricultural exports, dedi
   <input class="col-12" placeholder="Mobile Phone ">
 </div>
 
-<div class="col-lg-6 col-md-6 input-field"> 
+<div class="col-lg-6 col-md-6 input-field">
   <input class="col-12" placeholder="Company Name">
 </div>
- 
+
 <div class="col-lg-6 col-md-6 input-field">
  <select class="form-select" aria-label="Default select example">
  <option selected>Import</option>
