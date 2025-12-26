@@ -22,7 +22,7 @@
                 <img src="{{ asset('assets/images/contact-bg.png') }}">
             </div>
 
-            <div class="form-contact">
+            <div>
 
                 <form action="{{ route('contact.send') }}" method="POST" class="wrapper-contact container">
                     <p>Contact Form</p>
