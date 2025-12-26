@@ -10,7 +10,11 @@
 
 @section(section: 'content')
 
+<style>
 
+
+
+</style>
 
 <section>
 
