@@ -11,17 +11,29 @@
 @section('content')
 
 <section>
-<div class="main-banner" style="background-image: url('{{ asset('assets/images/banner-img-1.png') }}')">
-    {{-- <img class="img-banner" src="{{ asset('assets/images/banner-img-1.png') }}"> --}}
-     <div class="main-banner-h1-bg">
-        <h1>Career</h1>
+<div class="main-banner">
+  <img class="banner-img" src="{{ asset('assets/images/banner-img-1.png') }}">
+   <div class="wrapper-banner">
+    <div class="logo-video">
+  <video autoplay muted loop class="home-banner-logo">
+                <source src="{{ asset('assets/videos/LOGO.webm') }}">
+                </source>
+            </video>
+    </div>
+ <div class="banner-content">
+       <div class="main-banner-h1-bg">
+        <h1 class="popup">Career</h1>
      </div>
      <div class="main-banner-p-bg">
-    <p class="sub-1">​Join Our Team and Grow with Cambodia’s
-Leading Agricultural Exporter”</p>
-<p class="sub-2">Be part of a company that connects local farmers to global markets, values integrity, and delivers quality products worldwide.”</p>
+    <p class="popup">J​​oin Our Team and Grow with Cambodia’s 
+Leading Agricultural Exporter</p>
+
+ <p class="popup">​Be part of a company that connects local farmers to global markets, values integrity, and delivers quality products worldwide.”</p>
      </div>
-    <button class="btn-Interest-to-export">View Open Positions</button>
+     <a class="popup" href="#first-card"><button class="btn-Interest-to-export">View Open Positions</button></a>
+ </div>
+    </div>
+  </div>  
 </div>
 </section>
 
@@ -54,9 +66,8 @@ Leading Agricultural Exporter”</p>
 
                <div class="col-lg-6">
              <div class="career-file-form">
-               <input id="cvFile" type="file">
-               <label class="file-label">Resume Upload</label>
-             </div>
+               <input  type="file">
+            </div>
             </div>
 
 
@@ -74,9 +85,8 @@ Leading Agricultural Exporter”</p>
 
                   <div class="col-lg-6">
              <div class="career-file-form">
-               <input id="coverFile" type="file">
-               <label class="file-label-cover">Cover Letter Upload</label>
-             </div>
+               <input  type="file">
+            </div>
             </div>
 
 

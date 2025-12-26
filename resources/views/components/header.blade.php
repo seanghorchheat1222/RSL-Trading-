@@ -4,7 +4,7 @@
         <img src="{{ asset('assets/images/header_logo.png') }}" alt="" class="w-[10rem] lg:w-[15rem]">
         <div class="hidden lg:flex items-center gap-2">
             <div class="flex items-center gap-2">
-                <a href="#" class="flex items-center gap-2 text-[12px] text-[#1E1E1E] text-decoration-none">
+                <a  href="#" class="flex items-center gap-2 text-[12px] text-[#1E1E1E] text-decoration-none">
                     <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -21,7 +21,7 @@
                             fill="#109A49" />
                     </svg>
 
-                    <span>info@rsllogistics.com</span>
+                    <span>info@rsltrading.com</span>
                 </a>
                 <a href="#" class="flex items-center gap-2 text-[12px] text-[#1E1E1E] text-decoration-none">
                     <svg width="15" height="15" viewBox="0 0 16 16" fill="none"
@@ -31,7 +31,7 @@
                             fill="#109A49" />
                     </svg>
 
-                    <span>(855) 88 55 42</span>
+                    <span>+855 77 678 300</span>
                 </a>
 
                 {{-- social media --}}
@@ -91,20 +91,20 @@
                 </button>
 
                 <!-- Dropdown -->
-                <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-200"
+               <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-200"
                     x-transition:enter-start="opacity-0 translate-y-2 scale-95"
                     x-transition:enter-end="opacity-100 translate-y-0 scale-100"
                     x-transition:leave="transition ease-in duration-150"
                     x-transition:leave-start="opacity-100 translate-y-0 scale-100"
                     x-transition:leave-end="opacity-0 translate-y-2 scale-95"
-                    class="absolute right-0 mt-2 w-44 bg-white rounded shadow-lg py-2 z-50" style="display: none;>
+                    class="absolute right-0 mt-2 w-44 bg-white rounded shadow-lg py-2 z-50" style="display: none;">
 
                     @if ($locale !== 'en')
                         <a href="{{ route('lang.switch', 'en') }}"
-                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent text-[#000]">
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white">
                             <img src="{{ asset('assets/images/icons/usa-flag.png') }}" class="w-5 h-5 rounded-full">
                             <span>
-                                {{ $locale === 'km' ? 'ភាសាអង់គ្លេស' : ($locale === 'ch' ? '英语' : 'English') }}
+                                {{ $locale === 'km' ? 'ភាសាអង់គ្លេស' : ($locale === 'cn' ? '英语' : 'English') }}
                             </span>
                         </a>
                     @endif
@@ -112,10 +112,10 @@
                     <!-- KM -->
                     @if ($locale !== 'km')
                         <a href="{{ route('lang.switch', 'km') }}"
-                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent text-[#000]">
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white">
                             <img src="{{ asset('assets/images/icons/kh-flag.png') }}" class="w-5 h-5 rounded-full">
                             <span>
-                                {{ $locale === 'en' ? 'Khmer' : ($locale === 'ch' ? '高棉语' : 'ភាសាខ្មែរ') }}
+                                {{ $locale === 'en' ? 'Khmer' : ($locale === 'cn' ? '高棉语' : 'ភាសាខ្មែរ') }}
                             </span>
                         </a>
                     @endif
@@ -123,7 +123,7 @@
                     <!-- CN -->
                     @if ($locale !== 'ch')
                         <a href="{{ route('lang.switch', 'ch') }}"
-                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white decoration-transparent text-[#000]">
+                            class="flex items-center gap-2 px-3 py-2 hover:bg-red-500 hover:text-white">
                             <img src="{{ asset('assets/images/icons/ch-flag.png') }}" class="w-5 h-5 rounded-full">
                             <span>
                                 {{ $locale === 'en' ? 'Chinese' : ($locale === 'km' ? 'ចិន' : '中文') }}
@@ -248,7 +248,7 @@
                 </li>
                 <li>
                     <a href="{{ route('events') }}"
-                        class="block p-2 hover:bg-gray-100 rounded text-[#1E1E1E] no-underline {{ Route::is('events') ? 'bg-[#059848] text-[#fff]' : '' }}">Events</a>
+                        class="block p-2 hover:bg-gray-100 rounded text-[#1E1E1E] no-underline {{ Route::is('events') ? 'bg-[#059848] text-[#fff]' : '' }}">Activities</a>
                 </li>
                 <li>
                     <a href="{{ route('career') }}"
@@ -279,7 +279,7 @@
                                 fill="#109A49" />
                         </svg>
 
-                        <span>info@rsllogistics.com</span>
+                        <span>info@rsltrading.com</span>
                     </a>
                     <a href="#" class="flex items-center gap-2 text-[12px] text-[#1E1E1E] no-underline">
                         <svg width="15" height="15" viewBox="0 0 16 16" fill="none"
@@ -289,7 +289,7 @@
                                 fill="#109A49" />
                         </svg>
 
-                        <span>(855) 88 55 42</span>
+                        <span>+855 77 678 300</span>
                     </a>
                 </div>
 

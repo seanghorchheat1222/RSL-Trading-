@@ -8,7 +8,9 @@
      <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}">
 @endsection
 
-@section('content')
+@section(section: 'content')
+
+
 
 <section>
 
@@ -19,7 +21,7 @@
 
     <div class="form-contact">
 
-<section>
+
 <div class="wrapper-contact container">
 <h1>Contact Us</h1>
 <div class="row">
@@ -35,13 +37,13 @@
   <input class="col-12" placeholder="Company Name">
 </div>
 
+
 <div class="col-lg-6 col-md-6 input-field">
- <select class="form-select" aria-label="Default select example">
- <option selected>Import</option>
-  <option value="1">Select Commodities</option>
-  <option value="2">Select Commodities</option>
-  <option value="3">Select Commodities</option>
-</select>
+  <select id="tradeType" class="form-select">
+    <option value="">Select Import/Export</option>
+    <option value="import">Import</option>
+    <option value="export">Export</option>
+  </select>
 </div>
 
 <div class="col-lg-6 col-md-6 input-field">
@@ -239,9 +241,10 @@
 
 </div>
 
-<div class="col-lg-6 col-md-6 input-field">
-  <input class="col-12" placeholder="Export
-">
+
+<div class="col-lg-6 col-md-6">
+  <label class="choose-field" >Commodities</label>
+  <div id="commodityList" class="showcommoditylist"></div>
 </div>
 
 <div class="col-lg-6 col-md-6 input-field">
@@ -278,8 +281,7 @@ information so they can respond to my enquiry.”
 </div>
 </div>
 </section>
-  </div>
 
-  </div>
-</section>
+
+
 @endsection

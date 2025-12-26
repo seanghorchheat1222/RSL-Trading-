@@ -61,7 +61,7 @@
         </li>
         <li>
             <a href="{{ route('events') }} "
-                class="text-[#000] px-4 py-4 w-full nav_link text-[16px] text-decoration-none {{ Route::is('events') ? 'active' : '' }}">Events</a>
+                class="text-[#000] px-4 py-4 w-full nav_link text-[16px] text-decoration-none {{ Route::is('events') ? 'active' : '' }}">Activities</a>
         </li>
         <li>
             <a href="{{ route('career') }} "

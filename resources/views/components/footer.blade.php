@@ -302,6 +302,7 @@
 
                <li><a href="{{ route('home') }}">Home</a></li>
                <li><a href="{{ route('export')}}">Main Commodities</a></li>
+               <li><a href="{{ route('import')}}">Import</a></li>
                <li><a href="{{ route('about') }}">About Us</a></li>
                <li><a href="{{ route('events') }}">Activities</a></li>
                <li><a href="{{ route('career') }}">Career</a></li>
@@ -346,8 +347,7 @@
 
 
           <div class="footer-company">
-            <h5>Founded in 2015,</h5>
-              <p>RSL Trading is a Cambodian leader in agricultural exports, dedicated to connecting local farmers with global markets. Our goal is to bring the finest “Made in Cambodia” products such as rice, coffee, corn, cashew nuts, mangoes, and cassava and other nutrient fruits—to buyers worldwide while supporting farmers with better opportunities and incomes.</p>
+              <p>Founded in 2015, RSL Trading is a Cambodian leader in agricultural exports, dedicated to connecting local farmers with global markets. Our goal is to bring the finest “Made in Cambodia” products such as rice, coffee, corn, cashew nuts, mangoes, and cassava and other nutrient fruits—to buyers worldwide while supporting farmers with better opportunities and incomes.</p>
               <div class="company-bg">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.297500132666!2d104.86175!3d11.6021264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095385a229bec1%3A0xada2a43a8ca90037!2z4Z6Y4Z-Q4Z6a4Z6V4Z-S4Z6b4Z654Z6fIE1vcmUgUGx1cw!5e0!3m2!1sen!2skh!4v1766630998356!5m2!1sen!2skh" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>

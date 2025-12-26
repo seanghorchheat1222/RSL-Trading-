@@ -724,27 +724,292 @@ z-index: -1;
 }
 
 
+ .showcommoditylist{
+    width: 100%;
+    height: auto;
+    background-color: #059848;
+    color: #ffffff;
+    border-radius: 24.5px;
+    padding-left: 1rem;
+}
+
+.wrapper-contact .choose-field{
+width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+  padding-top: 0.7rem
+
+}
 
 
 
+/* banner style */
+
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  gap: 5rem !important;
+  position: relative
+}
+
+.main-banner .banner-img{
+ position: absolute;
+  width: 100%;
+  height: 120vh;
+ top: 0%;
+ z-index: -1;
+  object-fit: cover;
+}
+
+.banner-content {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .logo-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 400px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 70px;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 500px;
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: -10% !important;
+}
+
+@media screen and (max-width: 1025px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 300px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 55px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 350px !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 769px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: -4rem
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 250px !important;
+}
+
+.banner-content .main-banner-h1-bg{
+ width: 100% !important
+}
+
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 40px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 100% !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 7% !important;
+}
+
+
+.main-banner .banner-img{
+ position: absolute;
+  width: 100%;
+  height: 130vh;
+ top: 0%;
+ z-index: -1;
+ object-fit: cover;
+}
+}
+
+
+@media screen and (max-width: 641px){
+  .main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 15rem 
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 30% !important;
+}
+
+.main-banner .banner-img{
+ position: absolute;
+  width: 100%;
+  height: 150vh;
+ top: 0%;
+ z-index: -1;
+ object-fit: cover;
+}
+}
+
+@media screen and (max-width: 426px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 1rem;
+  margin-top: 15rem;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 200px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 40px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 100% !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 14px;
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 55% !important;
+}
+}
+
+/* popup animate */
+
+
+.popup {
+  opacity: 0;
+  transform: scale(0.6);
+  animation: popupIn 1s ease-out forwards;
+}
+
+/* Keyframe animation */
+@keyframes popupIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 
 
 </style>
 
+
+
 <section>
-<div class="main-banner" style="background-image: url('{{ asset('assets/images/banner-img-1.png') }}')">
-  {{-- <img class="img-banner"  src="{{ asset('assets/images/banner-img-1.png') }}"> --}}
-     <div class="main-banner-h1-bg">
-        <h1>About Us</h1>
+<div class="main-banner">
+  <img class="banner-img" src="{{ asset('assets/images/banner-img-1.png') }}">
+   <div class="wrapper-banner">
+    <div class="logo-video">
+  <video autoplay muted loop class="home-banner-logo">
+                <source src="{{ asset('assets/videos/LOGO.webm') }}">
+                </source>
+            </video>
+    </div>
+ <div class="banner-content">
+       <div class="main-banner-h1-bg">
+        <h1 class="popup">About Us</h1>
      </div>
      <div class="main-banner-p-bg">
-    <p>​​Your Trusted Partner in Cambodian Agricultural Exports</p>
+    <p class="popup">​​Your Trusted Partner in Cambodian Agricultural Exports</p>
      </div>
-    <button class="btn-Interest-to-export">Interest to Export</button>
+     <a class="popup" href="#first-card"><button class="btn-Interest-to-export">Interest to Export</button></a>
+ </div>
+    </div>
+  </div>  
 </div>
 </section>
-
 <section>
     <div class="first-card">
       <div class="first-card-background">
@@ -865,12 +1130,6 @@ z-index: -1;
           </div>
 
 
-
-
-
-
-
-
         </div>
       </div>
       </div>
@@ -974,15 +1233,14 @@ z-index: -1;
   <input class="col-12" placeholder="Company Name">
 </div>
 
-<div class="col-lg-6 col-md-6 input-field">
- <select class="form-select" aria-label="Default select example">
- <option selected>Import</option>
-  <option value="1">Select Commodities</option>
-  <option value="2">Select Commodities</option>
-  <option value="3">Select Commodities</option>
-    <option value="4">Select Commodities</option>
-</select>
+   <div class="col-lg-6 col-md-6 input-field">
+  <select id="tradeType" class="form-select">
+    <option value="">Select Import/Export</option>
+    <option value="import">Import</option>
+    <option value="export">Export</option>
+  </select>
 </div>
+
 
 <div class="col-lg-6 col-md-6 input-field">
 <select class="form-select" aria-label="Default select example">
@@ -1180,14 +1438,9 @@ z-index: -1;
 </div>
 
 
-<div class="col-lg-6 col-md-6 input-field">
- <select class="form-select" aria-label="Default select example">
- <option selected>Export</option>
-  <option value="1">Select Commodities</option>
-  <option value="2">Select Commodities</option>
-  <option value="3">Select Commodities</option>
-    <option value="4">Select Commodities</option>
-</select>
+<div class="col-lg-6 col-md-6">
+  <label class="choose-field" >Commodities</label>
+  <div id="commodityList" class="showcommoditylist"></div>
 </div>
 
 <div class="col-lg-6 col-md-6 input-field">
@@ -1210,7 +1463,7 @@ z-index: -1;
 <input type="checkbox">
 <div class="confrim-policy-text">
 <p>I consent to having this website store my submitted
-information so they can respond to my enquiry.”
+information so they can respond to my enquiry.
 </p>
 </div>
 </div>

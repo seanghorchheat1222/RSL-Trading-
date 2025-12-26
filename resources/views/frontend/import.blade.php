@@ -4,27 +4,975 @@
     <title>Import - RSL Trading</title>
 @endsection
 
-@section('css')
+{{-- @section('css')
      <link rel="stylesheet" href="{{ asset('assets/css/import.css') }}">
-@endsection
+@endsection --}}
 
-@section('content')
+@section(section: 'content')
 
+<style>
+:root{
+  color: #059848;
+  color: #FFFFFF
+}
+
+.main-banner{
+  width: 100%;
+  height: 115vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0 !important;
+  position: relative;
+}
+
+.main-banner .img-banner{
+  width: 100%;
+  height: 115vh;
+position: absolute;
+object-fit: cover;
+top: 0;
+z-index: -1;
+}
+
+.main-banner .main-banner-h1-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-banner h1{
+  font-weight: bolder;
+  font-size: 100px;
+  color: #059848;
+}
+
+.main-banner .main-banner-p-bg{
+  width: 50rem;
+  text-align: center;
+}
+
+.main-banner .main-banner-p-bg p{
+  font-size: 20px;
+}
+
+.btn-Interest-to-export{
+  width: 228px;
+  height: 43px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1025px){
+  .main-banner h1{
+  font-weight: bolder;
+  font-size: 75px;
+  color: #059848;
+}
+
+.main-banner .main-banner-p-bg{
+  width: 30rem;
+  text-align: center;
+}
+
+.btn-Interest-to-export{
+  width: 208px;
+  height: 40px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 3rem;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+.main-banner{
+  height: 70vh;
+}
+    .main-banner h1{
+  font-weight: bolder;
+  font-size: 50px;
+  color: #059848;
+}
+
+.main-banner .main-banner-p-bg{
+  width: 25rem;
+  text-align: center;
+}
+
+.main-banner .main-banner-p-bg p{
+  font-size: 15px;
+}
+
+
+.btn-Interest-to-export{
+  width: 180px;
+  height: 30px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 3rem;
+}
+}
+
+
+
+@media screen and (max-width: 426px) {
+
+.main-banner{
+  height: 70vh;
+}
+    .main-banner h1{
+  font-weight: bolder;
+  font-size: 40px;
+  color: #059848;
+}
+
+.main-banner .main-banner-p-bg{
+  width: 18rem;
+  text-align: center;
+}
+
+.main-banner .main-banner-p-bg p{
+  font-size: 13px;
+}
+
+
+.btn-Interest-to-export{
+  width: 180px;
+  height: 30px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 3rem;
+}
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 18rem;
+  margin-top: -2% !important;
+}
+
+.first-card-background{
+    z-index: 0 !important;
+    position: absolute;
+ height: 100%;
+  width: 100%;
+  top: 0;
+  margin-top: -5.5rem;
+
+}
+
+.first-card-background img{
+  object-fit: cover;
+  width: 100%;
+  height: 170vh;
+}
+
+
+
+@media screen and (max-width: 769px) {
+.first-card{
+  margin-top: 6% !important;
+}
+}
+
+.main-banner{
+  width: 100%;
+  height: 100vh;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0 !important;
+  position: relative;
+}
+
+
+.btn-Interest-to-export{
+  width: 228px;
+  height: 43px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 2rem;
+}
+
+.card-product{
+  position: relative;
+  margin-top: -5rem;
+}
+
+.card-product .card-product-bg{
+ width: 100%;
+}
+
+.card-product .card-product-detail{
+  width: 100%;
+  height: 480px;
+  background-color: #D7FFEE;
+  position: relative;
+  margin-top: -5rem;
+  border: #EEFFF8;
+  border-radius: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-product .card-product-detail h5{
+  font-weight: bolder;
+  color: #059848;
+  font-size: 20px;
+}
+
+.smaill-detail-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.card-product .card-product-detail .smaill-detail-card button{
+ color: #1E1E1E;
+ font-size: 20px;
+  width: 274px;
+  max-width: 100%;
+ height: 47px;
+}
+
+.card-product .card-product-detail .smaill-detail-card button a{
+  color: #000000;
+  text-decoration: none;
+}
+
+
+.card-product .card-product-detail .smaill-detail-card button:hover{
+ background-color: #059848;
+ color: #FFFFFF;
+ width: 274px;
+ max-width: 100%;
+ height: 47px;
+ border-radius: 23.5px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card-product .card-product-detail .smaill-detail-card button:hover a{
+  color: #FFFFFF;
+}
+
+.card-product .card-product-detail .btn-card-interest-to-export{
+position: absolute;
+bottom: 5%;
+left: 50%;
+transform: translate(-50%);
+
+}
+
+.card-product .card-product-detail .btn-card-interest-to-export button{
+  width: 140.27px;
+  height: 42.66px;
+  background: linear-gradient(to right, #8DC640, #059848);
+  border-radius: 41.5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+
+.card-no{
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(to right, #8DC640, #059848);
+  position: absolute;
+  top: -7%;
+  right: 10%;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-no p{
+  font-size: 40px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-top: 1rem;
+}
+
+.partner-main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  z-index: 10;
+}
+
+.partner-main .partner-bg{
+  width: 100%;
+  height: 598px !important;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.partner-main h1{
+  font-size: 25px;
+  color:#FFFFFF;
+  font-weight: bolder;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.partner-main .partner-card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.partner-main .partner-card-wrapper .partner-card{
+  width: 100%;
+  height: 323px;
+  background-color: #007E3A;
+  color: #FFFFFF;
+  border-radius: 50px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 1rem;
+ padding-left: 1rem;
+}
+
+.partner-main .partner-card-wrapper .partner-card h5{
+  font-size: 20px;
+}
+
+.partner-main .partner-card-wrapper .partner-card p{
+  font-size: 15px;
+}
+
+.partner-main .partner-card-wrapper .partner-card svg{
+  width: 80px
+}
+
+@media screen and (max-width: 769px){
+  .partner-main .partner-card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.partner-main .partner-card-wrapper .partner-card{
+  width: 100%;
+  height: 220px;
+  background-color: #007E3A;
+  color: #FFFFFF;
+  border-radius: 30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 0.5rem;
+ padding-left: 0.5rem;
+}
+
+.partner-main .partner-card-wrapper .partner-card h5{
+  font-size: 15px;
+}
+
+.partner-main .partner-card-wrapper .partner-card p{
+  font-size: 13px;
+}
+
+.partner-main .partner-card-wrapper .partner-card svg{
+  width: 60px
+}
+
+}
+
+
+@media screen and (max-width: 426px){
+
+  .partner-main{
+  width: 100%;
+  height: 598px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .partner-main .partner-card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+.partner-main .partner-card-wrapper .partner-card{
+  width: 100%;
+  height: 190px;
+  background-color: #007E3A;
+  color: #FFFFFF;
+  border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 0.5rem;
+ padding-left: 0.5rem;
+}
+
+.partner-main .partner-card-wrapper .partner-card h5{
+  font-size: 13px;
+}
+
+.partner-main .partner-card-wrapper .partner-card p{
+  font-size: 10px;
+}
+
+.partner-main .partner-card-wrapper .partner-card svg{
+  width: 40px
+}
+}
+
+.wrapper-contact{
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.wrapper-contact p{
+  text-align: center;
+  color:#059848;
+  font-size: 30px;
+}
+
+.wrapper-contact .input-field input{
+  width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+}
+
+.wrapper-contact .input-field input::placeholder{
+  font-size: 16px !important;
+  color: #394552 !important;
+}
+
+.wrapper-contact .input-field input:focus{
+  border: 1px solid #059848 !important;
+}
+
+.wrapper-contact .input-field textarea{
+  width: 100%;
+  max-height: auto;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+}
+
+.wrapper-contact .input-field textarea::placeholder{
+  color: #394552;
+}
+
+.wrapper-contact .input-field textarea:focus{
+  border: 1px solid #059848 !important;
+}
+
+.wrapper-contact .input-field select{
+  width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+  border: 1px solid #394552;
+}
+
+.wrapper-contact .input-field select option{
+background-color: #059848;
+color: #ffffff
+}
+
+.confirm-policy{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.confirm-policy input[type="checkbox"]{
+  width: 27px;
+  height: 27px;
+  border-radius: 100px;
+  background-color: #059848;
+  border: none;
+}
+
+.confirm-policy input[type="checkbox"]:focus,
+.confirm-policy input[type="checkbox"]:active
+{
+  box-shadow: none;
+ background-color: #059848;
+}
+
+.confrim-policy-text{
+  width: 25rem;
+}
+
+.confirm-policy p{
+  font-size: 15px;
+  color: #059848;
+}
+
+.btn-Submit{
+  position: relative;
+  width: 396.97px;
+  height: 80.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  font-size: 35px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .wrapper-contact{
+  margin-top: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.btn-Submit{
+  width: 356.97px;
+  height: 75.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: 0rem;
+}
+
+.confirm-policy p{
+  font-size: 14px;
+  color: #059848;
+}
+}
+
+@media screen and (max-width: 426px) {
+  .btn-Submit{
+  width: 286.97px;
+  height: 68.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: -0.3rem;
+  font-size: 25px;
+}
+}
+
+.last-banner{
+  width: 100%;
+  height: 70vh;
+}
+
+.last-banner img{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 769px) {
+  .last-banner{
+  width: 100%;
+  height: 50vh;
+}
+
+.last-banner img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+}
+
+
+@media screen and (max-width: 426px) {
+  .last-banner{
+  width: 100%;
+  height: 40vh;
+}
+
+.last-banner img{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+}
+
+
+
+
+
+
+
+
+    .showcommoditylist{
+    width: 100%;
+    height: auto;
+    background-color: #059848;
+    color: #ffffff;
+    border-radius: 24.5px;
+    padding-left: 1rem;
+}
+
+.wrapper-contact .choose-field{
+width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+  padding-top: 0.7rem
+
+}
+
+
+
+/* banner style */
+
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  gap: 5rem !important;
+  position: relative
+}
+
+.main-banner .banner-img{
+ position: absolute;
+  width: 100%;
+  height: 120vh;
+ top: 0%;
+ z-index: -1;
+  object-fit: cover;
+}
+
+.banner-content {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .logo-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 400px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 70px;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 500px;
+}
+
+@media screen and (max-width: 1025px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 300px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 55px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 350px !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 769px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: -4rem
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 250px !important;
+}
+
+.banner-content .main-banner-h1-bg{
+ width: 100% !important
+}
+
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 40px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 100% !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 7% !important;
+}
+
+
+.main-banner .banner-img{
+ position: absolute;
+  width: 100%;
+  height: 130vh;
+ top: 0%;
+ z-index: -1;
+ object-fit: cover;
+}
+}
+
+
+@media screen and (max-width: 641px){
+  .main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 15rem 
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 50% !important;
+}
+
+.main-banner .banner-img{
+ position: absolute;
+  width: 100%;
+  height: 150vh;
+ top: 0%;
+ z-index: -1;
+ object-fit: cover;
+}
+}
+
+@media screen and (max-width: 426px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 1rem;
+  margin-top: 15rem;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 200px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 40px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 100% !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 14px;
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 70% !important;
+}
+}
+
+/* popup animate */
+
+
+.popup {
+  opacity: 0;
+  transform: scale(0.6);
+  animation: popupIn 1s ease-out forwards;
+}
+
+/* Keyframe animation */
+@keyframes popupIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+</style>
 <section>
-<div class="main-banner" style="background-image: url('{{ asset('assets/images/banner-img-1.png') }}')">
-  {{-- <img class="img-banner" src="{{ asset('assets/images/banner-img-1.png') }}"> --}}
-     <div class="main-banner-h1-bg">
-        <h1>Import</h1>
-       <h1>Commodities</h1>
+<div class="main-banner">
+  <img class="banner-img" src="{{ asset('assets/images/banner-img-1.png') }}">
+   <div class="wrapper-banner">
+    <div class="logo-video">
+  <video autoplay muted loop class="home-banner-logo">
+                <source src="{{ asset('assets/videos/LOGO.webm') }}">
+                </source>
+            </video>
+    </div>
+ <div class="banner-content">
+       <div class="main-banner-h1-bg">
+        <h1 class="popup">Import</h1>
+       <h1 class="popup">Commodities</h1>
      </div>
      <div class="main-banner-p-bg">
-    <p>Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes & Cassava, Exported Worldwide with Quality You Can Trust.</p>
+    <p class="popup">Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes & Cassava, Exported Worldwide with Quality You Can Trust.</p>
      </div>
-    <button class="btn-Interest-to-export">Interest to Import</button>
+     <a class="popup" href="#first-card"><button class="btn-Interest-to-export">Interest to Import</button></a>
+ </div>
+    </div>
+  </div>  
 </div>
 </section>
 
-<section>
+<section id="first-card">
     <div class="first-card">
       <div class="first-card-background">
         <img src="{{ asset('assets/images/second-bg.png') }}">
@@ -114,7 +1062,6 @@
                  <p>Long-shelf-life dehydrated garlic and onion products ideal for food production and distribution.</p>
                 <div class="smaill-detail-card">
                 <button><a>Dried Garlic</a></button>
-               <button><a>Yellow Corn</a></button>
                 </div>
 
                   <div class="btn-card-interest-to-export">
@@ -239,18 +1186,12 @@
   <input class="col-12" placeholder="Company Name">
 </div>
 
-<div class="col-lg-6 col-md-6 input-field">
-  <input class="col-12" placeholder="Import
-">
-</div>
-
-<div class="col-lg-6 col-md-6 input-field">
- <select class="form-select" aria-label="Default select example">
- <option selected>Import</option>
-  <option value="1">Select Commodities</option>
-  <option value="2">Select Commodities</option>
-  <option value="3">Select Commodities</option>
-</select>
+           <div class="col-lg-6 col-md-6 input-field">
+  <select id="tradeType" class="form-select">
+    <option value="">Select Import/Export</option>
+    <option value="import">Import</option>
+    <option value="export">Export</option>
+  </select>
 </div>
 
 <div class="col-lg-6 col-md-6 input-field">
@@ -448,6 +1389,12 @@
 
 </div>
 
+
+<div class="col-lg-6 col-md-6">
+  <label class="choose-field" >Commodities</label>
+  <div id="commodityList" class="showcommoditylist"></div>
+</div>
+
 <div class="col-lg-6 col-md-6 input-field">
   <input class="col-12" placeholder="Adress
 ">
@@ -468,7 +1415,7 @@
 <input type="checkbox">
 <div class="confrim-policy-text">
 <p>I consent to having this website store my submitted
-information so they can respond to my enquiry.”
+information so they can respond to my enquiry.
 </p>
 </div>
 </div>

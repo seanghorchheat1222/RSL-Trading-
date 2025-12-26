@@ -4,28 +4,1076 @@
     <title>Export - RSL Trading</title>
 @endsection
 
-@section('css')
+{{-- @section('css')
      <link rel="stylesheet" href="{{ asset('assets/css/export.css') }}">
-@endsection
+@endsection --}}
 
 @section('content')
 
-<section>
-<div class="main-banner" style="background-image: url('{{ asset('assets/images/banner-img-1.png') }}')">
-   {{-- <img class="img-banner" src="{{ asset('assets/images/banner-img-1.png') }}"> --}}
+<style>
 
-     <div class="main-banner-h1-bg">
-        <h1>Export</h1>
-       <h1>Commodities</h1>
+:root{
+  color: #059848;
+  color: #FFFFFF
+}
+
+.main-banner{
+  width: 100%;
+  height: 115vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0 !important;
+  position: relative;
+}
+
+
+.main-banner .img-banner{
+  width: 100%;
+  height: 115vh;
+position: absolute;
+object-fit: cover;
+top: 0;
+z-index: -1;
+}
+
+
+
+.main-banner h1{
+  font-weight: bolder;
+  font-size: 100px;
+  color: #059848;
+}
+
+.main-banner .main-banner-p-bg{
+  width: 50rem;
+  text-align: center;
+}
+
+.main-banner .main-banner-p-bg p{
+  font-size: 20px;
+}
+
+.btn-Interest-to-export{
+  width: 228px;
+  height: 43px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1025px){
+  .main-banner h1{
+  font-weight: bolder;
+  font-size: 75px;
+  color: #059848;
+}
+
+.main-banner .main-banner-p-bg{
+  width: 30rem;
+  text-align: center;
+}
+
+.btn-Interest-to-export{
+  width: 208px;
+  height: 40px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 3rem;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+.main-banner{
+  height: 70vh;
+}
+    .main-banner h1{
+  font-weight: bolder;
+  font-size: 50px;
+  color: #059848;
+}
+
+.main-banner .main-banner-p-bg{
+  width: 25rem;
+  text-align: center;
+}
+
+.main-banner .main-banner-p-bg p{
+  font-size: 15px;
+}
+
+
+.btn-Interest-to-export{
+  width: 180px;
+  height: 30px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 3rem;
+}
+}
+
+
+@media screen and (max-width: 426px) {
+
+.main-banner{
+  height: 70vh;
+}
+    .main-banner h1{
+  font-weight: bolder;
+  font-size: 40px;
+  color: #059848;
+}
+
+.main-banner .main-banner-p-bg{
+  width: 18rem;
+  text-align: center;
+}
+
+.main-banner .main-banner-p-bg p{
+  font-size: 13px;
+}
+
+
+.btn-Interest-to-export{
+  width: 180px;
+  height: 30px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 3rem;
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+.btn-Interest-to-export{
+  width: 228px;
+  height: 43px;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  color: #059848;
+  border-radius: 41.5px;
+  margin-top: 2rem;
+}
+
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 18rem;
+  margin-top: -2% !important;
+}
+
+.first-card-background{
+    z-index: 0 !important;
+    position: absolute;
+  height: 170vh;
+  width: 100%;
+  top: 0;
+  margin-top: -7rem;
+}
+
+.first-card-background img{
+  object-fit: cover;
+  width: 100%;
+  height: 170vh;
+}
+
+@media screen and (max-width: 2561px) and (min-width: 1441px){
+  .first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  margin-top: -5rem !important;
+}
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+  .first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  margin-top: -5rem !important;
+}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+  .first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  margin-top: -5rem !important;
+}
+}
+
+
+@media screen and (max-width: 640px) and (min-width: 426px){
+  .first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  margin-top: 2rem !important;
+}
+}
+
+@media screen and (max-width: 425px){
+  .first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  margin-top: 3rem !important;
+}
+}
+
+
+
+
+.main-card-product{
+  width: 100%;
+  height: auto;
+  margin-top: 2rem !important;
+  position: relative;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1441px) {
+      .main-card-product{
+   margin-top: 2rem !important;;
+}
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+    .main-card-product{
+  margin-top: 2rem !important;
+}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .main-card-product{
+  margin-top: -2rem !important;
+}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .main-card-product{
+  margin-top: -2rem !important;
+}
+}
+
+@media screen and (max-width: 425px) {
+    .main-card-product{
+  margin-top: -2rem !important;
+}
+}
+
+.card-product{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.card-product .card-product-bg{
+ width: 100%;
+
+}
+
+.card-product .card-product-detail{
+  width: 100%;
+  height: 360px;
+  background-color: #EEFFF8;
+  position: relative;
+  margin-top: -5rem;
+  border: #EEFFF8;
+  border-radius: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .card-product .card-product-detail{
+  width: 100%;
+  height: 390px;
+}
+
+}
+
+
+
+@media screen and (max-width: 426px){
+  .card-product .card-product-detail{
+  height: 380px;
+}
+}
+
+.card-product .card-product-detail h5{
+  font-weight: bolder;
+  color: #059848;
+  font-size: 20px;
+}
+
+.smaill-detail-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+.card-product .card-product-detail .smaill-detail-card button{
+ color: #1E1E1E;
+ font-size: 20px;
+  width: 274px;
+ height: 47px;
+}
+
+.card-product .card-product-detail .smaill-detail-card button a{
+  color: #000000;
+  text-decoration: none;
+}
+
+
+.card-product .card-product-detail .smaill-detail-card button:hover{
+ background-color: #059848;
+ color: #FFFFFF;
+ width: 274px;
+ height: 47px;
+ border-radius: 23.5px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card-product .card-product-detail .smaill-detail-card button:hover a{
+  color: #FFFFFF
+}
+
+
+.card-product .card-product-detail .btn-card-interest-to-export{
+position: absolute;
+bottom: 5%;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.card-product .card-product-detail .btn-card-interest-to-export button{
+  width: 140.27px;
+  height: 42.66px;
+  background: linear-gradient(to right, #8DC640, #059848);
+  border-radius: 41.5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.card-no{
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(to right, #8DC640, #059848);
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-no p{
+  font-size: 40px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-top: 1rem;
+}
+
+.partner-main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;;
+}
+
+@media screen and  (max-width: 1200px){
+  
+.partner-main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;;
+}
+}
+
+.partner-main .partner-bg{
+  width: 100%;
+  height: 598px !important;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.partner-main h1{
+  font-size: 25px;
+  color:#FFFFFF;
+  font-weight: bolder;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 426px) {
+  .partner-main h1{
+  font-size: 18px;
+    margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+}
+}
+
+.partner-main .partner-card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.partner-main .partner-card-wrapper .partner-card{
+  width: 100%;
+  height: 323px;
+  background-color: #007E3A;
+  color: #FFFFFF;
+  border-radius: 50px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 1rem;
+ padding-left: 1rem;
+}
+
+.partner-main .partner-card-wrapper .partner-card h5{
+  font-size: 20px;
+}
+
+.partner-main .partner-card-wrapper .partner-card p{
+  font-size: 15px;
+}
+
+.partner-main .partner-card-wrapper .partner-card svg{
+  width: 80px
+}
+
+@media screen and (max-width: 769px){
+  .partner-main .partner-card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.partner-main .partner-card-wrapper .partner-card{
+  width: 100%;
+  height: 220px;
+  background-color: #007E3A;
+  color: #FFFFFF;
+  border-radius: 30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 0.5rem;
+ padding-left: 0.5rem;
+}
+
+.partner-main .partner-card-wrapper .partner-card h5{
+  font-size: 15px;
+}
+
+.partner-main .partner-card-wrapper .partner-card p{
+  font-size: 13px;
+}
+
+.partner-main .partner-card-wrapper .partner-card svg{
+  width: 60px
+}
+
+}
+
+
+@media screen and (max-width: 426px){
+
+  .partner-main{
+  width: 100%;
+  height: 598px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .partner-main .partner-card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+.partner-main .partner-card-wrapper .partner-card{
+  width: 100%;
+  height: 190px;
+  background-color: #007E3A;
+  color: #FFFFFF;
+  border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 0.5rem;
+ padding-left: 0.5rem;
+}
+
+.partner-main .partner-card-wrapper .partner-card h5{
+  font-size: 13px;
+}
+
+.partner-main .partner-card-wrapper .partner-card p{
+  font-size: 10px;
+}
+
+.partner-main .partner-card-wrapper .partner-card svg{
+  width: 40px
+}
+}
+
+.wrapper-contact{
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.wrapper-contact p{
+  text-align: center;
+  color:#059848;
+  font-size: 30px;
+}
+
+
+
+.wrapper-contact .input-field input{
+  width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+}
+
+.wrapper-contact .input-field input::placeholder{
+  font-size: 16px !important;
+  color: #394552 !important;
+}
+
+.wrapper-contact .input-field input:focus{
+  border: 1px solid #059848 !important;
+}
+
+.wrapper-contact .input-field textarea{
+  width: 100%;
+  max-height: auto;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+}
+
+.wrapper-contact .input-field textarea::placeholder{
+  color: #394552;
+}
+
+.wrapper-contact .input-field textarea:focus{
+  border: 1px solid #059848 !important;
+}
+
+
+.wrapper-contact .input-field select{
+  width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+  border: 1px solid #394552;
+}
+
+.wrapper-contact .input-field select option{
+background-color: #059848;
+color: #ffffff
+}
+
+.confirm-policy{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.confirm-policy input[type="checkbox"]{
+  width: 27px;
+  height: 27px;
+  border-radius: 100px;
+  background-color: #059848;
+  border: none;
+}
+
+.confirm-policy input[type="checkbox"]:focus,
+.confirm-policy input[type="checkbox"]:active
+{
+  box-shadow: none;
+ background-color: #059848;
+}
+
+.confrim-policy-text{
+  width: 25rem;
+}
+
+.confirm-policy p{
+  font-size: 15px;
+  color: #059848;
+}
+
+.btn-Submit{
+  position: relative;
+  width: 396.97px;
+  height: 80.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  font-size: 35px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .wrapper-contact{
+  margin-top: 5rem;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.btn-Submit{
+  width: 356.97px;
+  height: 75.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: 0rem;
+}
+
+.confirm-policy p{
+  font-size: 14px;
+  color: #059848;
+}
+}
+
+@media screen and (max-width: 426px) {
+  .btn-Submit{
+  width: 286.97px;
+  height: 68.14px;
+  margin-top: 2rem;
+}
+
+.btn-Submit p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: -0.3rem;
+  font-size: 25px;
+}
+}
+
+.last-banner{
+  width: 100%;
+  height: 70vh;
+}
+
+.last-banner img{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 769px) {
+  .last-banner{
+  width: 100%;
+  height: 50vh;
+}
+
+.last-banner img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+}
+
+@media screen and (max-width: 426px) {
+  .last-banner{
+  width: 100%;
+  height: 40vh;
+}
+
+.last-banner img{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+}
+
+
+  .showcommoditylist{
+    width: 100%;
+    height: auto;
+    background-color: #059848;
+    color: #ffffff;
+    border-radius: 24.5px;
+    padding-left: 1rem;
+}
+
+.wrapper-contact .choose-field{
+width: 100%;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #ECECEC;
+  padding-left: 1.5rem;
+  font-size: 16px !important; 
+  margin-bottom: 0.5rem;
+  outline: none !important;
+  padding-top: 0.7rem
+
+}
+
+
+
+/* banner style */
+
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  gap: 5rem !important;
+  position: relative
+}
+
+.main-banner .banner-img{
+ position: absolute;
+  width: 100%;
+  height: 120vh;
+ top: 0%;
+ z-index: -1;
+  object-fit: cover;
+}
+
+.banner-content {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .logo-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 400px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 70px;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 500px;
+}
+
+@media screen and (max-width: 1025px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 300px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 55px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 350px !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 769px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: -4rem
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 250px !important;
+}
+
+.banner-content .main-banner-h1-bg{
+ width: 100% !important
+}
+
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 40px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 100% !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 16px;
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 7% !important;
+}
+
+
+.main-banner .banner-img{
+ position: absolute;
+  width: 100%;
+  height: 130vh;
+ top: 0%;
+ z-index: -1;
+ object-fit: cover;
+}
+}
+
+
+@media screen and (max-width: 641px){
+  .main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 15rem 
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 75% !important;
+}
+}
+
+@media screen and (max-width: 426px){
+.main-banner .wrapper-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 1rem;
+  margin-top: 15rem;
+}
+
+.banner-content .main-banner-h1-bg{
+  text-align: center;
+}
+
+.wrapper-banner .home-banner-logo{
+  width: 200px !important;
+}
+
+.banner-content .main-banner-h1-bg h1{
+  font-size: 40px;
+}
+
+.banner-content .main-banner-p-bg{
+  width: 100% !important;
+}
+
+.banner-content .main-banner-p-bg p{
+  font-size: 14px;
+}
+
+.first-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 95% !important;
+}
+}
+
+/* popup animate */
+
+
+.popup {
+  opacity: 0;
+  transform: scale(0.6);
+  animation: popupIn 1s ease-out forwards;
+}
+
+/* Keyframe animation */
+@keyframes popupIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+</style>
+
+
+<section>
+<div class="main-banner">
+  <img class="banner-img" src="{{ asset('assets/images/banner-img-1.png') }}">
+   <div class="wrapper-banner">
+    <div class="logo-video">
+  <video autoplay muted loop class="home-banner-logo">
+                <source src="{{ asset('assets/videos/LOGO.webm') }}">
+                </source>
+            </video>
+    </div>
+ <div class="banner-content">
+       <div class="main-banner-h1-bg">
+        <h1 class="popup">Export</h1>
+       <h1 class="popup">Commodities</h1>
      </div>
      <div class="main-banner-p-bg">
-    <p>Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes & Cassava, Exported Worldwide with Quality You Can Trust.</p>
+    <p class="popup">Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes & Cassava, Exported Worldwide with Quality You Can Trust.</p>
      </div>
-    <button class="btn-Interest-to-export">Interest to Export</button>
+     <a class="popup" href="#first-card"><button class="btn-Interest-to-export">Interest to Export</button></a>
+ </div>
+    </div>
+  </div>  
 </div>
 </section>
 
-<section>
+<section id="first-card">
     <div class="first-card">
       <div class="first-card-background">
         <img src="{{ asset('assets/images/second-bg.png') }}">
@@ -35,137 +1083,353 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 col-12">
-          <div class="card-product">
-            <img class="card-product-bg" src="{{ asset('assets/images/export-card-product-1.png') }}">
-             <div class="card-product-detail">
-                 <h5>Grains & Cereals</h5>
-                 <p>High-quality, farm-sourced grains
-trusted by local farmers and global
-buyers.</p>
+<div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-product" x-data="{
+                                active: 'default',
+                                products: {
+                                    default: {
+                                        title: 'Grains & Cereals',
+                                        desc: 'High-quality, farm-sourced grains trusted by local farmers and global buyers.',
+                                        img: '{{ asset('assets/images/export-card-product-2.png') }}'
+                                    },
+                                    rice: {
+                                        title: 'Rice',
+                                        desc: 'Export-quality fresh mangoes with rich flavor and natural sweetness.',
+                                        img: '{{ asset('assets/images/export-card-product-3.png') }}'
+                                    },
+                                   yellow_corn: {
+                                        title: 'Yellow Corn',
+                                        desc: 'Carefully dried mango slices for long shelf life and premium taste.',
+                                        img: '{{ asset('assets/images/export-card-product-4.png') }}'
+                                    }
+                                }
+                            }">
+                                <!-- Image -->
+                                <img class="card-product-bg" :src="products[active].img">
 
-       <div class="smaill-detail-card">
-                <button><a href="{{ route('rice-detail') }}">Rice</a></button>
-               <button>Yellow Corn</button>
-                </div>
-                <div class="btn-card-interest-to-export">
-                  <button >Interest to Export</button>
-                </div>
+                                <div class="card-product-detail">
+                                    <!-- Title -->
+                                    <h5 x-text="products[active].title"></h5>
 
-              <div class="card-no">
-                <p>01</p>
-              </div>
-             </div>
-        </div>
-          </div>
+                                    <!-- Description -->
+                                    <p x-text="products[active].desc"></p>
 
-               <div class="col-lg-4 col-md-6 col-12">
-          <div class="card-product">
-            <img class="card-product-bg" src="{{ asset('assets/images/export-card-product-2.png') }}">
-             <div class="card-product-detail">
-                 <h5>Fruits & Fruit Products</h5>
-                 <p>Fresh and processed fruits harvested at peak
-ripeness for maximum flavor and quality.
-</p>
-                <div class="smaill-detail-card">
-                <button><a href="{{ route('rice-detail') }}">Fresh Mangoo</a></button>
-               <button>Dried Mango</button>
-                </div>
-                <div class="btn-card-interest-to-export">
-                  <button >Interest to Export</button>
-                </div>
-              <div class="card-no">
-                <p>02</p>
-              </div>
-             </div>
-        </div>
-          </div>
+                                    <!-- Buttons -->
+                                    <div class="smaill-detail-card">
+                                        <!-- Fresh Mango -->
+                                        <button x-show="active === 'default'" @click="active = 'rice'">
+                                            Rice
+                                        </button>
 
-               <div class="col-lg-4 col-md-6 col-12">
-          <div class="card-product">
-            <img class="card-product-bg" src="{{ asset('assets/images/export-card-product-3.png') }}">
-             <div class="card-product-detail">
-                 <h5>Nuts & Legumes</h5>
-                 <p>Premium-grade nuts and legumes sourced
-from trusted Cambodian farmers.</p>
-                <div class="smaill-detail-card">
-                <button><a href="{{ route('rice-detail') }}">Cashew Nuts</a></button>
-               <button>Peanuts</button>
-                </div>
-                <div class="btn-card-interest-to-export">
-                  <button >Interest to Export</button>
-                </div>
-              <div class="card-no">
-                <p>03</p>
-              </div>
-             </div>
-        </div>
-          </div>
+                                        <!-- Dried Mango -->
+                                        <button x-show="active === 'default'" @click="active = 'yellow_corn'">
+                                           Yellow Corn
+                                        </button>
+
+                                        <!-- Back -->
+                                        <button x-show="active !== 'default'" @click="active = 'default'" class="btn-back">
+                                            Back
+                                        </button>
+                                    </div>
+
+                                    <!-- Interest Button -->
+                                    <div class="btn-card-interest-to-export">
+                                        <button>Interest to Export</button>
+                                    </div>
+
+                                    <!-- Card Number -->
+                                    <div class="card-no">
+                                        <p>02</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
-               <div class="col-lg-4 col-md-6 col-12">
-          <div class="card-product">
-            <img class="card-product-bg" src="{{ asset('assets/images/export-card-product-4.png') }}">
-             <div class="card-product-detail">
-                 <h5>Root Crops</h5>
-                 <p>Processed and dried cassava ideal for
-industrial and export applications.</p>
-                <div class="smaill-detail-card">
-                <button><a href="{{ route('rice-detail') }}">Dried Cassava</a></button>
-                </div>
-                <div class="btn-card-interest-to-export">
-                  <button >Interest to Export</button>
-                </div>
-              <div class="card-no">
-                <p>04</p>
-              </div>
-             </div>
-        </div>
-          </div>
+<div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-product" x-data="{
+                                active: 'default',
+                                products: {
+                                    default: {
+                                        title: 'Fruits & Fruit Products',
+                                        desc: 'Fresh and processed fruits harvested at peak ripeness for maximum flavor and quality.',
+                                        img: '{{ asset('assets/images/export-card-product-2.png') }}'
+                                    },
+                                    fresh_mango: {
+                                        title: 'Fresh Mango',
+                                        desc: 'Export-quality fresh mangoes with rich flavor and natural sweetness.',
+                                        img: '{{ asset('assets/images/export-card-product-3.png') }}'
+                                    },
+                                    dried_mango: {
+                                        title: 'Dried Mango',
+                                        desc: 'Carefully dried mango slices for long shelf life and premium taste.',
+                                        img: '{{ asset('assets/images/export-card-product-4.png') }}'
+                                    }
+                                }
+                            }">
+                                <!-- Image -->
+                                <img class="card-product-bg" :src="products[active].img">
+
+                                <div class="card-product-detail">
+                                    <!-- Title -->
+                                    <h5 x-text="products[active].title"></h5>
+
+                                    <!-- Description -->
+                                    <p x-text="products[active].desc"></p>
+
+                                    <!-- Buttons -->
+                                    <div class="smaill-detail-card">
+                                        <!-- Fresh Mango -->
+                                        <button x-show="active === 'default'" @click="active = 'fresh_mango'">
+                                            Fresh Mango
+                                        </button>
+
+                                        <!-- Dried Mango -->
+                                        <button x-show="active === 'default'" @click="active = 'dried_mango'">
+                                            Dried Mango
+                                        </button>
+
+                                        <!-- Back -->
+                                        <button x-show="active !== 'default'" @click="active = 'default'" class="btn-back">
+                                            Back
+                                        </button>
+                                    </div>
+
+                                    <!-- Interest Button -->
+                                    <div class="btn-card-interest-to-export">
+                                        <button>Interest to Export</button>
+                                    </div>
+
+                                    <!-- Card Number -->
+                                    <div class="card-no">
+                                        <p>02</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-product" x-data="{
+                                active: 'default',
+                                products: {
+                                    default: {
+                                        title: 'Nuts & Legumes',
+                                        desc: 'Premium-grade nuts and legumes sourced from trusted Cambodian farmers.',
+                                        img: '{{ asset('assets/images/export-card-product-3.png') }}'
+                                    },
+                                    cashew: {
+                                        title: 'Cashew Nuts',
+                                        desc: 'High-quality Cambodian cashew nuts suitable for global export markets.',
+                                        img: '{{ asset('assets/images/cashew.png') }}'
+                                    },
+                                    peanut: {
+                                        title: 'Peanuts',
+                                        desc: 'Premium peanuts processed for food and industrial use.',
+                                        img: '{{ asset('assets/images/peanut.png') }}'
+                                    }
+                                }
+                            }">
+                                <!-- Image -->
+                                <img class="card-product-bg" :src="products[active].img">
+
+                                <div class="card-product-detail">
+                                    <!-- Title -->
+                                    <h5 x-text="products[active].title"></h5>
+
+                                    <!-- Description -->
+                                    <p x-text="products[active].desc"></p>
+
+                                    <!-- Buttons -->
+                                    <div class="smaill-detail-card">
+                                        <!-- Cashew -->
+                                        <button x-show="active === 'default'" @click="active = 'cashew'">
+                                            Cashew Nuts
+                                        </button>
+
+                                        <!-- Peanut -->
+                                        <button x-show="active === 'default'" @click="active = 'peanut'">
+                                            Peanuts
+                                        </button>
+
+                                        <!-- Back -->
+                                        <button x-show="active !== 'default'" @click="active = 'default'" class="btn-back">
+                                            Back
+                                        </button>
+                                    </div>
+
+                                    <!-- Interest Button -->
+                                    <div class="btn-card-interest-to-export">
+                                        <button>Interest to Export</button>
+                                    </div>
+
+                                    <!-- Card Number -->
+                                    <div class="card-no">
+                                        <p>03</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-product" x-data="{
+                                active: 'default',
+                                products: {
+                                    default: {
+                                        title: 'Root Crops',
+                                        desc: 'Processed and dried cassava ideal for industrial and export applications.',
+                                        img: '{{ asset('assets/images/export-card-product-4.png') }}'
+                                    },
+                                    cassava: {
+                                        title: 'Dried Cassava',
+                                        desc: 'High-quality dried cassava for industrial processing and international export.',
+                                        img: '{{ asset('assets/images/dried-cassava.png') }}'
+                                    }
+                                }
+                            }">
+                                <!-- Image -->
+                                <img class="card-product-bg" :src="products[active].img">
+
+                                <div class="card-product-detail">
+                                    <!-- Title -->
+                                    <h5 x-text="products[active].title"></h5>
+
+                                    <!-- Description -->
+                                    <p x-text="products[active].desc"></p>
+
+                                    <!-- Buttons -->
+                                    <div class="smaill-detail-card">
+                                        <!-- Dried Cassava -->
+                                        <button x-show="active === 'default'" @click="active = 'cassava'">
+                                            Dried Cassava
+                                        </button>
+
+                                        <!-- Back -->
+                                        <button x-show="active !== 'default'" @click="active = 'default'" class="btn-back">
+                                            Back
+                                        </button>
+                                    </div>
+
+                                    <!-- Interest Button -->
+                                    <div class="btn-card-interest-to-export">
+                                        <button>Interest to Export</button>
+                                    </div>
+
+                                    <!-- Card Number -->
+                                    <div class="card-no">
+                                        <p>04</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
 
-               <div class="col-lg-4 col-md-6 col-12">
-          <div class="card-product">
-            <img class="card-product-bg" src="{{ asset('assets/images/export-card-product-5.png') }}">
-             <div class="card-product-detail">
-                 <h5>Spices</h5>
-                 <p>Aromatic Cambodian pepper known for
-its global reputation and rich flavor profile.</p>
-                <div class="smaill-detail-card">
-                <button><a href="{{ route('rice-detail') }}">Pepper</a></button>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-product" x-data="{
+                                active: 'default',
+                                products: {
+                                    default: {
+                                        title: 'Spices',
+                                        desc: 'Aromatic Cambodian pepper known for its global reputation and rich flavor profile.',
+                                        img: '{{ asset('assets/images/export-card-product-5.png') }}'
+                                    },
+                                    pepper: {
+                                        title: 'Pepper',
+                                        desc: 'High-quality Cambodian pepper suitable for international export markets.',
+                                        img: '{{ asset('assets/images/pepper.png') }}'
+                                    }
+                                }
+                            }">
+                                <!-- Image -->
+                                <img class="card-product-bg" :src="products[active].img">
+                                <div class="card-product-detail">
+                                    <!-- Title -->
+                                    <h5 x-text="products[active].title"></h5>
 
-                </div>
-                <div class="btn-card-interest-to-export">
-                  <button >Interest to Export</button>
-                </div>
-              <div class="card-no">
-                <p>05</p>
-              </div>
-             </div>
-        </div>
-          </div>
+                                    <!-- Description -->
+                                    <p x-text="products[active].desc"></p>
+
+                                    <!-- Buttons -->
+                                    <div class="smaill-detail-card">
+                                        <!-- Pepper -->
+                                        <button x-show="active === 'default'" @click="active = 'pepper'">
+                                            Pepper
+                                        </button>
+
+                                        <!-- Back -->
+                                        <button x-show="active !== 'default'" @click="active = 'default'" class="btn-back">
+                                            Back
+                                        </button>
+                                    </div>
+
+                                    <!-- Interest Button -->
+                                    <div class="btn-card-interest-to-export">
+                                        <button>Interest to Export</button>
+                                    </div>
+
+                                    <!-- Card Number -->
+                                    <div class="card-no">
+                                        <p>05</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
 
-               <div class="col-lg-4 col-md-6 col-12">
-          <div class="card-product">
-            <img class="card-product-bg" src="{{ asset('assets/images/export-card-product-6.png') }}">
-             <div class="card-product-detail">
-                 <h5>Coffee & Beverages</h5>
-                 <p>Premium Cambodian coffee beans carefully
-selected and exported with international
-standards.</p>
-                <div class="smaill-detail-card">
-                <button><a  href="{{ route('rice-detail') }}">Coffee Beans</a></button>
-                </div>
-                <div class="btn-card-interest-to-export">
-                  <button >Interest to Export</button>
-                </div>
-              <div class="card-no">
-                <p>06</p>
-              </div>
-             </div>
-        </div>
-          </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-product" x-data="{
+                                active: 'default',
+                                products: {
+                                    default: {
+                                        title: 'Coffee & Beverages',
+                                        desc: 'Premium Cambodian coffee beans carefully selected and exported with international standards.',
+                                        img: '{{ asset('assets/images/export-card-product-6.png') }}'
+                                    },
+                                    coffee: {
+                                        title: 'Coffee Beans',
+                                        desc: 'High-quality Cambodian coffee beans roasted and prepared for global export markets.',
+                                        img: '{{ asset('assets/images/coffee-beans.png') }}'
+                                    }
+                                }
+                            }">
+                                <!-- Image -->
+                                <img class="card-product-bg" :src="products[active].img">
+
+                                <div class="card-product-detail">
+                                    <!-- Title -->
+                                    <h5 x-text="products[active].title"></h5>
+
+                                    <!-- Description -->
+                                    <p x-text="products[active].desc"></p>
+
+                                    <!-- Buttons -->
+                                    <div class="smaill-detail-card">
+                                        <!-- Coffee Beans -->
+                                        <button x-show="active === 'default'" @click="active = 'coffee'">
+                                            Coffee Beans
+                                        </button>
+
+                                        <!-- Back -->
+                                        <button x-show="active !== 'default'" @click="active = 'default'"
+                                            class="btn-back">
+                                            Back
+                                        </button>
+                                    </div>
+                                    <div class="btn-card-interest-to-export">
+                                        <button>Interest to Export</button>
+                                    </div>
+
+                                    <!-- Card Number -->
+                                    <div class="card-no">
+                                        <p>06</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+  
         </div>
       </div>
       </div>
@@ -276,13 +1540,12 @@ standards.</p>
   <input class="col-12" placeholder="Company Name">
 </div>
 
-<div class="col-lg-6 col-md-6 input-field">
- <select class="form-select" aria-label="Default select example">
- <option selected>Import</option>
-  <option value="1">Select Commodities</option>
-  <option value="2">Select Commodities</option>
-  <option value="3">Select Commodities</option>
-</select>
+         <div class="col-lg-6 col-md-6 input-field">
+  <select id="tradeType" class="form-select">
+    <option value="">Select Import/Export</option>
+    <option value="import">Import</option>
+    <option value="export">Export</option>
+  </select>
 </div>
 
 <div class="col-lg-6 col-md-6 input-field">
@@ -480,9 +1743,9 @@ standards.</p>
 
 </div>
 
-<div class="col-lg-6 col-md-6 input-field">
-  <input class="col-12" placeholder="Export
-">
+<div class="col-lg-6 col-md-6">
+  <label class="choose-field" >Commodities</label>
+  <div id="commodityList" class="showcommoditylist"></div>
 </div>
 
 <div class="col-lg-6 col-md-6 input-field">
@@ -505,7 +1768,7 @@ standards.</p>
 <input type="checkbox">
 <div class="confrim-policy-text">
 <p>I consent to having this website store my submitted
-information so they can respond to my enquiry.”
+information so they can respond to my enquiry.
 </p>
 </div>
 </div>
