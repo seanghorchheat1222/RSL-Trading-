@@ -529,11 +529,10 @@
         .meet-our-team-card {
             width: 100%;
             height: 100%;
-            margin-top: -14rem;
+            margin-top: 5rem;
             position: relative;
             z-index: 60;
         }
-
 
 
         .meet-our-team-card h1 {
@@ -1000,12 +999,12 @@
                 </div>
                 <div class="banner-content">
                     <div class="main-banner-h1-bg">
-                        <h1 class="popup">About Us</h1>
+                        <h1 data-aos="zoom-in-up" data-aos-duration="1000">About Us</h1>
                     </div>
                     <div class="main-banner-p-bg">
-                        <p class="popup">​​Your Trusted Partner in Cambodian Agricultural Exports</p>
+                        <p data-aos="zoom-in-up" data-aos-duration="1200">​​Your Trusted Partner in Cambodian Agricultural Exports</p>
                     </div>
-                    <a class="popup" href="#first-card"><button class="btn-Interest-to-export">Interest to
+                    <a data-aos="zoom-in-up" data-aos-duration="1400" href="#first-card"><button class="btn-Interest-to-export">Interest to
                             Export</button></a>
                 </div>
             </div>
@@ -1229,16 +1228,14 @@
     </section>
 
     <section>
-        <div class="second-banner">
-            <img class="second-banner-img" src="{{ asset('assets/images/about-us-second-image.png') }}">
-            <div class="second-banner-context container">
-                <img class="direct-profile" src="{{ asset('assets/images/profile-card-1.png') }}">
-                <h5>Message from Board of Director</h5>
-                <div class="p-bg">
-                    <p>At the heart of our mission is a commitment to global well-being. By providing premium, high-quality
-                        products, we aim to enhance longevity and health for people everywhere. We are dedicated to serving
-                        and supporting our global community indefinitely, ensuring a thriving future for all humanity.</p>
-                </div>
+        <div class=" mt-[15rem] text-center flex flex-col gap-2 items-center justify-center max-w-7xl mx-auto px-2">
+            {{-- <img class="second-banner-img" src="{{ asset('assets/images/about-us-second-image.png') }}"> --}}
+            <img class="" src="{{ asset('assets/images/profile-card-1.png') }}" class="">
+            <h5 class="text-[20px] md:text-[25px] font-[700] text-[#059848]">Message from Board of Director</h5>
+            <div class="p-bg">
+                <p>At the heart of our mission is a commitment to global well-being. By providing premium, high-quality
+                    products, we aim to enhance longevity and health for people everywhere. We are dedicated to serving
+                    and supporting our global community indefinitely, ensuring a thriving future for all humanity.</p>
             </div>
         </div>
     </section>

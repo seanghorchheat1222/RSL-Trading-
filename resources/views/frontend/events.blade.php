@@ -801,12 +801,12 @@
                 </div>
                 <div class="banner-content">
                     <div class="main-banner-h1-bg">
-                        <h1 class="popup">Activites</h1>
+                        <h1 data-aos="zoom-in-up" data-aos-duration="1000">Activites</h1>
                     </div>
                     <div class="main-banner-p-bg">
-                        <p class="popup">​​​Your Trusted Partner in Cambodian Agricultural Exports</p>
+                        <p data-aos="zoom-in-up" data-aos-duration="1200">​​​Your Trusted Partner in Cambodian Agricultural Exports</p>
                     </div>
-                    <a class="popup" href="#contact"><button class="btn-Interest-to-export">Interest to
+                    <a data-aos="zoom-in-up" data-aos-duration="1400" href="#contact"><button class="btn-Interest-to-export">Interest to
                             Export</button></a>
                 </div>
             </div>
@@ -896,7 +896,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="relative z-[50]">
         <form action="{{ route('contact.send') }}" method="POST" class="wrapper-contact container">
             <p>Contact Form</p>
             <div class="row">

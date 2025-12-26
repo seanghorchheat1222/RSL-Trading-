@@ -623,16 +623,16 @@
                 </div>
                 <div class="banner-content">
                     <div class="main-banner-h1-bg">
-                        <h1 class="popup">Career</h1>
+                        <h1 data-aos="zoom-in-up" data-aos-duration="1000">Career</h1>
                     </div>
                     <div class="main-banner-p-bg">
-                        <p class="popup">J​​oin Our Team and Grow with Cambodia’s
+                        <p data-aos="zoom-in-up" data-aos-duration="1200">J​​oin Our Team and Grow with Cambodia’s
                             Leading Agricultural Exporter</p>
 
-                        <p class="popup">​Be part of a company that connects local farmers to global markets, values
+                        <p data-aos="zoom-in-up" data-aos-duration="1400">​Be part of a company that connects local farmers to global markets, values
                             integrity, and delivers quality products worldwide.”</p>
                     </div>
-                    <a class="popup" href="#first-card"><button class="btn-Interest-to-export">View Open
+                    <a data-aos="zoom-in-up" data-aos-duration="1600" href="#first-card"><button class="btn-Interest-to-export">View Open
                             Positions</button></a>
                 </div>
             </div>

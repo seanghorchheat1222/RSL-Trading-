@@ -963,14 +963,14 @@
                 </div>
                 <div class="banner-content">
                     <div class="main-banner-h1-bg">
-                        <h1 class="popup">Import</h1>
-                        <h1 class="popup">Commodities</h1>
+                        <h1 data-aos="zoom-in-up" data-aos-duration="1000">Import</h1>
+                        <h1 data-aos="zoom-in-up" data-aos-duration="1200">Commodities</h1>
                     </div>
                     <div class="main-banner-p-bg">
-                        <p class="popup">Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes
+                        <p data-aos="zoom-in-up" data-aos-duration="1400">Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes
                             & Cassava, Exported Worldwide with Quality You Can Trust.</p>
                     </div>
-                    <a class="popup" href="#first-card"><button class="btn-Interest-to-export">Interest to
+                    <a data-aos="zoom-in-up" data-aos-duration="1600" href="#first-card"><button class="btn-Interest-to-export">Interest to
                             Import</button></a>
                 </div>
             </div>
@@ -985,7 +985,7 @@
             </div>
             <div class="main-card-product">
                 <div class="container">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-y-20 gap-x-4">
                         {{-- item 1 --}}
                         <div class="">
                             <div class="card-product" x-data="{
@@ -1295,7 +1295,7 @@
                                 fill="white" />
                         </g>
                     </svg>
-                    <h5>Strong Financial Stabilityt</h5>
+                    <h5>Strong Financial Stability</h5>
                     <p>We have the resources and expertise to handle large-scale exports efficiently and reliably.</p>
                 </div>
 
@@ -1419,7 +1419,7 @@
         </div>
     </section>
 
-    <section id="contact" class="pt-6 md:pt-0">
+    <section id="contact" class="pt-6 md:pt-0 relative z-[50]">
         <form action="{{ route('contact.send') }}" method="POST" class="wrapper-contact container">
             <p>Contact Form</p>
             <div class="row">

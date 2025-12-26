@@ -297,7 +297,7 @@
                 <h5>Navigation</h5>
 
                 <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('export') }}">Main Commodities</a></li>
+                <li><a href="{{ route('export') }}">Export</a></li>
                 <li><a href="{{ route('import') }}">Import</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('events') }}">Activities</a></li>
@@ -408,11 +408,4 @@
         </div>
 
     </footer>
-
-
-
-
-
-
-
 </section>

@@ -1300,11 +1300,11 @@
 
             <div class="home-banner-context">
                 {{-- <h5 class="popup">{{ __('messages.home') }}</h5> --}}
-                <h5 class="popup">WELCOME TO</h5>
-                <h1 class="popup">RSL TRADING</h1>
-                <h3 class="popup">Health Life Future</h3>
+                <h5 data-aos="zoom-in-up" data-aos-duration="1000">WELCOME TO</h5>
+                <h1 data-aos="zoom-in-up" data-aos-duration="1200">RSL TRADING</h1>
+                <h3 data-aos="zoom-in-up" data-aos-duration="1400">Health Life Future</h3>
 
-                <button class="btn-explore-our-exports popup">
+                <button class="btn-explore-our-exports" data-aos="zoom-in-up" data-aos-duration="1600">
                     <img src="{{ asset('assets/images/btn-submit-bg.png') }}">
                     <p><a href="{{ route('export') }}#rice">Explore Our Exports</a></p>
                 </button>
@@ -1313,7 +1313,7 @@
     </section>
 
     {{-- contact --}}
-    <section class="home-first-banner relative w-full h-[110vh] ">
+    <section class="home-first-banner relative w-full h-[100vh] md:h-[130vh] ">
 
         <!-- Background Image -->
         <div class="absolute inset-0 z-10">
@@ -1322,7 +1322,7 @@
 
         <!-- Content -->
         <div
-            class="relative z-20 w-full h-full max-w-7xl mx-auto flex flex-col items-center justify-center text-center font-[700] pt-4">
+            class="relative z-20 w-full h-full max-w-7xl mx-auto flex flex-col items-center justify-center text-center font-[700] pt-40">
 
             <h2 class="text-[#8DC640] text-[20px] md:text-[25px] welcome-to-text">Welcome to</h2>
 
@@ -1338,7 +1338,7 @@
             </p>
 
 
-            <div class="rsl-trading-map">
+            <div class="w-full h-full pb-20">
                 <img src="{{ asset('assets/images/Map.png') }}">
             </div>
 
@@ -1350,8 +1350,8 @@
         <div class="we-start">
             <img class="we-start-bg" src="{{ asset('assets/images/bg-2.png') }}">
             <div class="we-start-context">
-                <div style="margin-top: -7rem" class="context-one">
-                    <h5>Why We Started</h5>
+                <div class="-mt-[6rem] 2xl:-mt-[10rem]" class="context-one">
+                    <h5 class="!text-[20px] md:!text-[30px] !text-[#059848] !text-center">Why We Started</h5>
                     <p>“We help local farmers by creating global opportunities for Cambodian agricultural products.”</p>
                 </div>
             </div>
@@ -1368,7 +1368,7 @@
 
     {{-- Commodities --}}
     <section>
-        <h5 class="text-[30px] text-[#059848] text-center pt-10">Our Main Commodities</h5>
+        <h5 class="text-[20px] md:text-[30px] text-[#059848] text-center pt-10">Our Main Commodities</h5>
         <div class="container">
             <div class="row">
 
@@ -1529,7 +1529,7 @@
 
             <div class="achievement-content">
 
-                <h4>Achievenmet in Number</h4>
+                <h4>Acheivement in Number</h4>
 
                 <div class="container wrapper-achievement-card">
                     <div class="row">
@@ -1899,7 +1899,7 @@
     </section>
 
     {{-- contact --}}
-    <section>
+    <section class="relative z-[50]">
         <form action="{{ route('contact.send') }}" method="POST" class="wrapper-contact container">
             <p>Contact Form</p>
             <div class="row">
