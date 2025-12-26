@@ -10,9 +10,26 @@
 
 @section(section: 'content')
     <style>
+        .wrapper-contact .choose-field {
+            width: 100%;
+            height: 49px;
+            border-radius: 24.5px;
+            background-color: #ECECEC;
+            padding-left: 1.5rem;
+            font-size: 16px !important;
+            margin-bottom: 0.5rem;
+            outline: none !important;
+            padding-top: 0.7rem
+        }
 
-
-
+        .showcommoditylist {
+            width: 100%;
+            height: auto;
+            background-color: #059848;
+            color: #ffffff;
+            border-radius: 24.5px;
+            padding-left: 1rem;
+        }
     </style>
 
     <section>
@@ -22,7 +39,7 @@
                 <img src="{{ asset('assets/images/contact-bg.png') }}">
             </div>
 
-            <div>
+            <div class="form-contact">
 
                 <form action="{{ route('contact.send') }}" method="POST" class="wrapper-contact container">
                     <p>Contact Form</p>

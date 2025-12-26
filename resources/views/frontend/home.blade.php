@@ -1257,9 +1257,6 @@
             padding-left: 1rem;
         }
 
-
-
-
         .popup {
             opacity: 0;
             transform: scale(0.6);
