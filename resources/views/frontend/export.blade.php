@@ -1051,7 +1051,7 @@
     <section>
         <div class="main-banner relative">
             {{-- <img class="banner-img" src="{{ asset('assets/images/banner-img-1.png') }}"> --}}
-             <video autoplay muted loop playsinline class="absolute banner-img inset-0 z-[-10] object-cover w-full h-full"
+            <video autoplay muted loop playsinline class="absolute banner-img inset-0 z-[-10] object-cover w-full h-full"
                 poster="fallback-image.jpg">
                 <source src="{{ url('assets/videos/bg.mp4') }}" type="video/mp4">
                 <source src="{{ url('assets/videos/bg.webm') }}" type="video/webm">
@@ -1066,18 +1066,29 @@
                 </div>
                 <div class="banner-content">
                     <div class="main-banner-h1-bg">
-                        <h1 data-aos="zoom-in-up" data-aos-duration="1000">{{ app()->getLocale() === 'en' ? 'Export' : (app()->getLocale() === 'km' ? 'Export' : 'Export') }}</h1>
-                        <h1 data-aos="zoom-in-up" data-aos-duration="1200">{{ app()->getLocale() === 'en' ? 'Commodities' : (app()->getLocale() === 'km' ? 'Commodities' : 'Commodities') }}</h1>
+                        <h1 data-aos="zoom-in-up" data-aos-duration="1000">
+                            {{ app()->getLocale() === 'en' ? 'Export' : (app()->getLocale() === 'km' ? 'Export' : 'Export') }}
+                        </h1>
+                        <h1 data-aos="zoom-in-up" data-aos-duration="1200">
+                            {{ app()->getLocale() === 'en' ? 'Commodities' : (app()->getLocale() === 'km' ? 'Commodities' : 'Commodities') }}
+                        </h1>
                     </div>
                     <div class="main-banner-p-bg">
-                        <p data-aos="zoom-in-up" data-aos-duration="1400">{{ app()->getLocale() === 'en' ? 'Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes
-                            & Cassava, Exported Worldwide with Quality You Can Trust.' : (app()->getLocale() === 'km' ? 'Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes
-                            & Cassava, Exported Worldwide with Quality You Can Trust.' : 'Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes
-                            & Cassava, Exported Worldwide with Quality You Can Trust.') }}</p>
+                        <p data-aos="zoom-in-up" data-aos-duration="1400">
+                            {{ app()->getLocale() === 'en'
+                                ? 'Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes
+                                                                                    & Cassava, Exported Worldwide with Quality You Can Trust.'
+                                : (app()->getLocale() === 'km'
+                                    ? 'Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes
+                                                                                    & Cassava, Exported Worldwide with Quality You Can Trust.'
+                                    : 'Premium Cambodian Agricultural Products – Rice, Coffee, Corn, Cashew Nuts, Mangoes
+                                                                                    & Cassava, Exported Worldwide with Quality You Can Trust.') }}
+                        </p>
                     </div>
-                    <a data-aos="zoom-in-up" data-aos-duration="1600" href="#interest"><button class="btn-Interest-to-export">
-                        {{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}
-                    </button></a>
+                    <a data-aos="zoom-in-up" data-aos-duration="1600" href="#interest"><button
+                            class="btn-Interest-to-export">
+                            {{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}
+                        </button></a>
                 </div>
             </div>
         </div>
@@ -1100,19 +1111,34 @@
                                 products: {
                                     default: {
                                         title: '{{ app()->getLocale() === 'en' ? 'Grains & Cereals' : (app()->getLocale() === 'km' ? 'Grains & Cereals' : 'Grains & Cereals') }}',
-                                        desc: '{{ app()->getLocale() === 'en' ? 'High-quality, farm-sourced grains trusted by local farmers and global buyers.' : (app()->getLocale() === 'km' ? 'High-quality, farm-sourced grains trusted by local farmers and global buyers.' : 'High-quality, farm-sourced grains trusted by local farmers and global buyers.') }}',
+                                        desc: '{{ app()->getLocale() === 'en'
+                                            ? 'High-quality, farm-sourced grains trusted by local farmers and global buyers.'
+                                            : (app()->getLocale() === 'km'
+                                                ? 'High-quality, farm-sourced grains trusted by local farmers and global buyers.'
+                                                : 'High-quality, farm-sourced grains trusted by local farmers and global buyers.') }}',
                                         img: '{{ asset('assets/images/export/cereals.jpg') }}'
                                     },
+
                                     rice: {
                                         title: '{{ app()->getLocale() === 'en' ? 'Rice' : (app()->getLocale() === 'km' ? 'Rice' : 'Rice') }}',
-                                        desc: '{{ app()->getLocale() === 'en' ? 'Export-quality fresh mangoes with rich flavor and natural sweetness.' : (app()->getLocale() === 'km' ? 'Export-quality fresh mangoes with rich flavor and natural sweetness.' : 'Export-quality fresh mangoes with rich flavor and natural sweetness.') }}',
+                                        desc: '{{ app()->getLocale() === 'en'
+                                            ? 'Premium export-quality rice carefully processed to meet international food standards.'
+                                            : (app()->getLocale() === 'km'
+                                                ? 'Premium export-quality rice carefully processed to meet international food standards.'
+                                                : 'Premium export-quality rice carefully processed to meet international food standards.') }}',
                                         img: '{{ asset('assets/images/export/rice.jpg') }}'
                                     },
+
                                     yellow_corn: {
                                         title: '{{ app()->getLocale() === 'en' ? 'Yellow Corn' : (app()->getLocale() === 'km' ? 'Yellow Corn' : 'Yellow Corn') }}',
-                                        desc: '{{ app()->getLocale() === 'en' ? 'Carefully dried mango slices for long shelf life and premium taste.' : (app()->getLocale() === 'km' ? 'Carefully dried mango slices for long shelf life and premium taste.' : 'Carefully dried mango slices for long shelf life and premium taste.') }}',
+                                        desc: '{{ app()->getLocale() === 'en'
+                                            ? 'High-grade yellow corn suitable for animal feed, food processing, and industrial use.'
+                                            : (app()->getLocale() === 'km'
+                                                ? 'High-grade yellow corn suitable for animal feed, food processing, and industrial use.'
+                                                : 'High-grade yellow corn suitable for animal feed, food processing, and industrial use.') }}',
                                         img: '{{ asset('assets/images/card-3.png') }}'
                                     }
+
                                 }
                             }">
                                 <!-- Image -->
@@ -1145,7 +1171,8 @@
 
                                     <!-- Interest Button -->
                                     <div class="btn-card-interest-to-export">
-                                        <button><a href="#contact" class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}
+                                        <button><a href="#contact"
+                                                class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}
                                             </a></button>
                                     </div>
 
@@ -1193,7 +1220,7 @@
                                     <div class="smaill-detail-card">
                                         <!-- Fresh Mango -->
                                         <button x-show="active === 'default'" @click="active = 'fresh_mango'">
-                                           {{ app()->getLocale() === 'en' ? 'Fresh Mango' : (app()->getLocale() === 'km' ? 'Fresh Mango' : 'Fresh Mango') }}
+                                            {{ app()->getLocale() === 'en' ? 'Fresh Mango' : (app()->getLocale() === 'km' ? 'Fresh Mango' : 'Fresh Mango') }}
                                         </button>
 
                                         <!-- Dried Mango -->
@@ -1209,7 +1236,8 @@
 
                                     <!-- Interest Button -->
                                     <div class="btn-card-interest-to-export">
-                                        <button><a href="#contact" class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
+                                        <button><a href="#contact"
+                                                class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
                                     </div>
 
                                     <!-- Card Number -->
@@ -1226,7 +1254,7 @@
                                 products: {
                                     default: {
                                         title: '{{ app()->getLocale() === 'en' ? 'Nuts & Legumes' : (app()->getLocale() === 'km' ? 'Nuts & Legumes' : 'Nuts & Legumes') }}',
-                                        desc: '{{ app()->getLocale() === 'en' ? 'Rice' : (app()->getLocale() === 'km' ? 'Rice' : 'Rice') }}Premium-grade nuts and legumes sourced from trusted Cambodian farmers.',
+                                        desc: '{{ app()->getLocale() === 'en' ? 'Premium-grade nuts and legumes sourced from trusted Cambodian farmers.' : (app()->getLocale() === 'km' ? 'Premium-grade nuts and legumes sourced from trusted Cambodian farmers.' : 'Premium-grade nuts and legumes sourced from trusted Cambodian farmers.') }}',
                                         img: '{{ asset('assets/images/export-card-product-3.png') }}'
                                     },
                                     cashew: {
@@ -1271,7 +1299,14 @@
 
                                     <!-- Interest Button -->
                                     <div class="btn-card-interest-to-export">
+                                        <div class="btn-card-interest-to-export">
+                                            <button><a href="#contact"
+                                                    class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
+                                        </div>
+                                    </div>
 
+                                    <!-- Card Number -->
+                                    <div class="card-no">
                                         <p>03</p>
                                     </div>
                                 </div>
@@ -1320,7 +1355,8 @@
 
                                     <!-- Interest Button -->
                                     <div class="btn-card-interest-to-export">
-                                        <button><a href="#contact" class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
+                                        <button><a href="#contact"
+                                                class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
                                     </div>
 
                                     <!-- Card Number -->
@@ -1374,7 +1410,8 @@
 
                                     <!-- Interest Button -->
                                     <div class="btn-card-interest-to-export">
-                                        <button><a href="#contact" class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
+                                        <button><a href="#contact"
+                                                class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
                                     </div>
 
                                     <!-- Card Number -->
@@ -1427,7 +1464,8 @@
                                         </button>
                                     </div>
                                     <div class="btn-card-interest-to-export">
-                                        <button><a href="#contact" class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
+                                        <button><a href="#contact"
+                                                class="text-[#fff] decoration-transparent">{{ app()->getLocale() === 'en' ? 'Interest to Export' : (app()->getLocale() === 'km' ? 'Interest to Export' : 'Interest to Export') }}</a></button>
                                     </div>
 
                                     <!-- Card Number -->
